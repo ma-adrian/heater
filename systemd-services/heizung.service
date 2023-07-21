@@ -1,0 +1,14 @@
+[Unit]
+Description=Heizungsregler Screen Service
+
+[Service]
+Type=forking
+KillMode=none
+User=dietpi
+Group=dietpi
+WorkingDirectory=/home/dietpi/scripts
+ExecStart=/usr/bin/screen -dmS Heizung /home/dietpi/scripts/heizungsregler_interactive.py
+
+[Install]
+WantedBy=multi-user.target
+

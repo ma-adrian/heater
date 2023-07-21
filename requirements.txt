@@ -1,0 +1,3 @@
+APScheduler
+prometheus-client
+RPi.GPIO
